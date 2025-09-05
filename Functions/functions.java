@@ -23,12 +23,16 @@ public class functions {
 //     return statement;
 // }
 
-public static int calculateSum(int num1,int num2){//parameters or formal parameters
+public static int calculatefact(int num1){//parameters or formal parameters
 
     Scanner sc=new Scanner(System.in);
     
-        int sum=num1+num2;
-        return sum;
+        int fact=1;
+        for(int i=1;i<=num1;i++){
+            fact=fact*i;
+        }
+
+        return fact;
 
 }
 
@@ -45,9 +49,9 @@ public static int calculateSum(int num1,int num2){//parameters or formal paramet
         //printHello_world();//function call
         
         int a=sc.nextInt();
-        int b=sc.nextInt();
-        int sum = calculateSum(a, b); //arguments or actual parameters
-        System.out.println("sum is"+sum); 
+        // int b=sc.nextInt();
+        int fact = calculatefact(a); //arguments or actual parameters
+        System.out.println("Factorial is  "+fact); 
 
 
 
