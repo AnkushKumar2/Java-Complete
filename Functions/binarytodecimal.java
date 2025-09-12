@@ -6,12 +6,12 @@ public class binarytodecimal {
 
     public static int BinarytoDecimal(int n){
         int ans=0;
-        int rem,mul=1;
-        while(n!=0){
-            rem=n%2;
-            n/=2;
-            ans=ans*mul+rem;
-            mul*=10;
+        int rem,pow=0;
+        while(n>0){
+            rem=n%10;
+            n/=10;
+            ans=ans+(rem*(int)Math.pow(2,pow));
+            pow++;
 
         }
         return ans;
