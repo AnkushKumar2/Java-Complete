@@ -6,11 +6,11 @@ public class decimalTobinary {
     public static int DecimaltoBinary(int n){
         int ans=0;
         int rem,mul=1;
-        while(n!=0){
-            rem = n%10;
-            n/=10;
-            ans=ans*mul+rem;
-            mul*=2;
+        while(n>0){
+            rem = n%2;
+            n/=2;
+            ans=(ans*mul)+rem;
+            mul*=10;
             
         }
         return ans;
