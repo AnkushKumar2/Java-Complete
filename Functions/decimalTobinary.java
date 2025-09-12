@@ -5,12 +5,12 @@ public class decimalTobinary {
 
     public static int DecimaltoBinary(int n){
         int ans=0;
-        int rem,mul=1;
+        int rem,pow=0;
         while(n>0){
             rem = n%2;
             n/=2;
-            ans=(ans*mul)+rem;
-            mul*=10;
+            ans=ans+((int)Math.pow(10,pow)*rem);
+            pow++;
             
         }
         return ans;
