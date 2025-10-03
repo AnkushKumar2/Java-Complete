@@ -18,6 +18,7 @@ public class insertion_sort {
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
+        System.out.println();
 
 
 
@@ -33,6 +34,11 @@ public class insertion_sort {
             arr1[i]=sc.nextInt();
         }
         Insertion_sort(arr1);
+      
+        
+            // System.out.println( Arrays.sort(arr1,0,5));
+        
+
 
 
 
