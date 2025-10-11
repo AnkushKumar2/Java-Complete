@@ -44,3 +44,4 @@ public class binary_search {
     }
     
 }
+//time complexity=O(log n){worst time complexity}
