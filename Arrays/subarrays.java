@@ -1,18 +1,19 @@
 import java.util.*;
 
-public class pairs_in_arrays {
+public class subarrays {
 
-    public static void pairs(int num[]){
-        int tp=0;
+    public static void Subarrays(int num[]){
         for(int i=0;i<num.length;i++){
-            int curr=num[i];
-            for(int j=i+1;j<num.length;j++){
-                System.out.print("("+curr+","+num[j]+")"+" ");
-                tp++;
+            int start=i;
+            for(int j=i;j<num.length;j++){
+                int end=j;
+                for(int k=start;k<=end;k++){
+                    System.out.print(num[k]+" ");
+                }
+                System.out.println();
             }
             System.out.println();
         }
-        System.out.print("total pairs: "+tp);
     }
     public static void main(String args[]){
 
@@ -24,9 +25,8 @@ public class pairs_in_arrays {
             arr[i]=sc.nextInt();
         }
         Arrays.sort(arr);
-        pairs(arr);
+        Subarrays(arr);
 
     }
     
 }
-//Time complexity=O(n^2)
