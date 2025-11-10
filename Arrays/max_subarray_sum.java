@@ -1,3 +1,7 @@
+// BRUTE FORCE APPROACH IN TIME COMPLEXITY OF 0(N^3)
+
+
+
 import java.util.*;
 
 public class max_subarray_sum {
@@ -12,6 +16,7 @@ public class max_subarray_sum {
                 for(int k=start;k<=end;k++){
                     currSum += num[k];
                 }
+                System.out.println(currSum);
                 if(maxSum < currSum){
                     maxSum =  currSum;
                 }
