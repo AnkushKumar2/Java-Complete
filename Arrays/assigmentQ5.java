@@ -1,8 +1,25 @@
 import java.util.*;
 
 public class assigmentQ5 {
-    public static int Triplet(int num[]){
+    public static void Triplet(int num[]){
         
+        for(int i=0;i<num.length;i++){
+            int start=i+1;
+            int end=num.length-1;
+            while(start<end){
+                int sum=(num[i]+num[start]+num[end]);
+                if(sum==0){
+                    System.out.println("["+num[i]+","+num[start]+","+num[end]+"]");
+                    break;
+                }
+                else{
+                    end--;
+                }
+
+            }
+        }
+        // return 0;
+
     }
     public static void main(String args[]){
          Scanner sc=new Scanner(System.in);
@@ -12,6 +29,7 @@ public class assigmentQ5 {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
+        Triplet(arr);
     }
     
 }
