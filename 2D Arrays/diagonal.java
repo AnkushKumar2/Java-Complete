@@ -3,13 +3,21 @@ import java.util.*;
 public class diagonal {
     public static int DiagonalSum(int matrix[][]){
         int sum=0;
+        int primarySum=0;
+        int secondarySum=0;
+        
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 if(i==j){
-                    sum+=matrix[i][j];
+                    primarySum+=matrix[i][j];
+                }
+                else if(i+j==matrix.length-1){
+                    secondarySum+=matrix[i][j];
                 }
             }
         }
+        sum=primarySum+secondarySum;
+    
         return sum;
     }
     public static void main(String args[]){
@@ -24,7 +32,7 @@ public class diagonal {
                 matrix[i][j]=sc.nextInt();
             }
         }
-        System.out.print("Diagonal Sum will be: "+DiagonalSum(matrix));
+        System.out.print("Both Diagonals Sum will be: "+DiagonalSum(matrix));
     }
     
 }
