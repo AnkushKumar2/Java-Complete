@@ -1,3 +1,6 @@
+//get ith bit means to check ith position bit is 0 or 1
+//for this we will use AND operator between n and 1<<i
+
 import java.util.Scanner;
 
 public class getithbit {
