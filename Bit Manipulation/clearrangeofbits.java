@@ -2,8 +2,8 @@ import java.util.*;
 
 public class clearrangeofbits {
     public static int RangeofBits(int n,int i,int j){
-        int a=(~0)<<j;
-        int b=(i+j)>>(~0);
+        int a=(~0)<<j+1;
+        int b=(1<<i)-1;
         int Bitmask=a|b;
         return n & Bitmask;
     }
