@@ -1,0 +1,1 @@
+Recursion is a method of solving a computational prblm where the solution depends on solutions to smaller instances of the same prblm.
