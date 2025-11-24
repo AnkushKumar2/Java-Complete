@@ -28,12 +28,21 @@ public class basics {
         int Fn=n*printFact(n-1);
         return Fn;
     }
+    public static int printNatural(int n){
+        if(n<1){
+            return 0;
+        }
+        int f1=printNatural(n-1);
+        int f2=n+printNatural(n-1);
+        return f2;
+    }
     public static void main( String args[]){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         printDec(n);
         printInc(n);
         System.out.println(printFact(n));
+        System.out.println(printNatural(n));
     }
     
 }
