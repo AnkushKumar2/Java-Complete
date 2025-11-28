@@ -40,7 +40,7 @@ public class arraysRecur {
         int key=sc.nextInt();
         System.out.println(isSorted(arr, 0));
         System.out.println(firstOccurence(arr, key, 0));
-        System.out.println(LastOcc(arr, key, key));
+        System.out.println(LastOcc(arr, key, 0));
 
 
     }
