@@ -23,12 +23,24 @@ public class arraysRecur {
         }
         return firstOccurence(arr, key, i+1);
     }
+    //LastOccurence of an element in an array
+    public static int LastOcc(int arr[],int key,int i){
+        if(i==arr.length){
+            return -1;
+        }
+        int f1=LastOcc(arr, key, i+1);
+        if(f1==-1 & arr[i]==key){
+            return i;
+        }
+        return f1;
+    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int arr[]={1,2,3,4,5,3,5};
         int key=sc.nextInt();
         System.out.println(isSorted(arr, 0));
         System.out.println(firstOccurence(arr, key, 0));
+        System.out.println(LastOcc(arr, key, key));
 
 
     }
