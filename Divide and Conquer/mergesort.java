@@ -1,4 +1,6 @@
 //In merge sort we will first divide the array and then start sorting and after sorting we merge the small sorted arrays in a single array
+//TC=O(nlogn)
+//SC=O(n)
 import java.util.*;
 
 public class mergesort {
