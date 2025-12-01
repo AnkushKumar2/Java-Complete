@@ -1,3 +1,9 @@
+//TC=O(nlogn)
+//SC=O(1)
+//in quick sort worst time complexity i.e.O(n^2) occurs when the pivot is either the smallest or largest element
+
+
+
 public class quicksort {
     public static void quickSort(int arr[],int si,int ei){
         if(si>=ei){
