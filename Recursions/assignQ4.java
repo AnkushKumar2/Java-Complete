@@ -1,23 +1,26 @@
 import java.util.*;
 
 public class assignQ4 {
-    public static int  CountSubSets(String str,int i,String ans){
-        int count =0;
+    public static void  CountSubSets(String str,int i,String ans){
+        
         if(i==str.length()){
-            if(ans.charAt(0)==ans.charAt(ans.length()-1)){
+            System.out.println(ans);
+            if( ans.length()>0 && ans.charAt(0)==ans.charAt(ans.length()-1) ){
                 count++;
             }
-            return count;
+            return;
         }
         CountSubSets(str, i+1, ans+str.charAt(i));
         CountSubSets(str, i+1, ans);
 
         
     }
+    static int count=0;
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         String str=sc.nextLine();
-        System.out.println(CountSubSets(str, 0, new String(" ")));
+        CountSubSets(str, 0, "");
+        System.out.println(count);
 
 
     }
