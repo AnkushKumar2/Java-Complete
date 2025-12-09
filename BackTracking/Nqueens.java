@@ -31,7 +31,7 @@ public class Nqueens {
             return;
         }
         for(int j=0;j<board.length;j++){
-            if(isSafe(board,row,j)){
+            // if(isSafe(board,row,j)){
                   board[row][j]='Q';
             nQueens(board, row+1);//function call
             
