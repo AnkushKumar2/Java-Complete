@@ -25,7 +25,7 @@ public class shortestpath {
         int y2=y*y;
 
         disp=(float)Math.sqrt(x2+y2);
-        return disp;
+        return disp; 
     }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
