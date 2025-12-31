@@ -1,3 +1,5 @@
+//TC=O(n^2)
+
 import java.util.ArrayList;
 import java.util.*;
 
@@ -6,13 +8,13 @@ public class containerwithmostwater {
         int max=Integer.MIN_VALUE;
         for(int i=0;i<list.size()-1;i++){
             
-            int ans=0;
+            
             for(int j=i+1;j<list.size();j++){
                 int min=Math.min(list.get(i), list.get(j));
                 int width=j-i;
-                ans=min*width;
+                int ans=min*width;
                 max=Math.max(max, ans);
-                ans=0;
+                
                 
             }
         }
