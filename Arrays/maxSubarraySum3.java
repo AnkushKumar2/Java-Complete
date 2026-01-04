@@ -10,10 +10,11 @@ public class maxSubarraySum3 {
         int currSum=0;
         for(int i=0;i<num.length;i++){
             currSum=currSum+num[i];
+             maxSum=Math.max(currSum, maxSum);//UPDATE AT EACH STEP
             if(currSum<0){
                 currSum=0;
             }
-            maxSum=Math.max(currSum, maxSum);
+           
         }
         System.out.println("Max subarray Sum: "+maxSum);
     }

@@ -1,3 +1,6 @@
+//TC =O(logn)
+
+
 import java.util.*;
 
 public class binary_search {
